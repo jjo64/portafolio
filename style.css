@@ -287,19 +287,12 @@ header {
 /*Estilo para la seccion de proyectos*/
 
 #proyectos {
-    width: 100vw;
-    height: 90vh;
+    min-width: 100%;
+    min-height: 90%;
     margin-top: 4%;
     margin-left: none;
     padding-top: 20px;
     padding-bottom: 20px;
-}
-
-/*Fijarme que hacer con el margin top y mover el margin bottom arriba*/
-
-#proyectos {
-    margin-top: auto;
-    margin-bottom: 20%;
 }
 
 .experience {
@@ -402,8 +395,8 @@ header {
 /*Estilo para la seccion de contacto*/
 
 #contacto {
-    width: 100vw;
-    height: 80vh;
+    min-width: 100%;
+    min-height: 60%;
     margin-top: 4%;
     background-color: #ebeefc;
     padding-top: 20px;
