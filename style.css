@@ -1,0 +1,556 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Cuerpo de la pagina*/
+
+body {
+    font-family: "Inter", sans-serif;
+}
+
+/*Contenedor de la caja*/
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; /* Alinea los elementos al final del contenedor (derecha) */
+}
+
+/*Menu de navegacion*/
+
+.menu-navegacion {
+    /* Elimina float y ajusta el margen derecho */
+    margin-right: 5%;
+    padding-top: 25px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    margin: 0 15px;
+}
+
+nav a:hover {
+    color: #ffcc00;
+}
+
+/*Cabeza de la pagina*/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+/*Estilo para secciones*/
+
+.secciones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.seccion {
+    width: 80%; /* Ajusta el ancho según tus necesidades */
+    margin-bottom: 40px; /* Ajusta el espacio entre secciones según tus necesidades */
+}
+
+.perfil img {
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+}
+
+.texto {
+    flex: 1;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.texto h1 {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 50px;
+    margin-left: 5%;
+}
+
+.texto p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-left: 5%;
+}
+
+.botones {
+    display: flex; /* Hace que los botones estén en una línea horizontal */
+    gap: 10px; /* Ajusta el espacio entre los botones según tus necesidades */
+    margin-top: 5px; /* Ajusta el espacio entre el párrafo y los botones según tus necesidades */
+    margin-right: 28%; /* Ajusta el margen izquierdo según tus necesidades */
+}
+
+.botones a {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    text-decoration: none;
+    padding: 5px 10px;
+    margin: 5px;
+    display: inline-block;
+}
+
+.botones a i {
+    margin-left: 5px;
+}
+
+/*Estilo seccion sobre mi*/
+
+#sobre-mi {
+    width: 100vw;
+    height: 60vh;
+    margin-top: 4%;
+    margin-left: none;
+    background-color: #ebeefc;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#sobre-mi h2 {
+    margin-top: 3%;
+    margin-left: 10%;
+    font-size: 35px;
+}
+
+.parrafo {
+    margin-top: 1.5%;
+    margin-left: 10%;
+    font-size: 15px;
+}
+
+.firma-digital {
+    height: 100px;
+    width: 100px;
+    margin-left: 10%;
+    margin-top: 1%;
+}
+
+/*Estilo skills*/
+
+#skills {
+    width: 100vw;
+    height: 60vh;
+    margin-top: 4%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra los elementos horizontalmente */
+}
+
+#skills h2 {
+    text-align: center;
+}
+
+/*Estilo para los iconos de skills*/
+
+.tecnologias {
+    display: flex;
+    justify-content: space-around;
+    gap: 35px;
+    margin-top: 4%;
+}
+
+.tecnologia {
+    text-align: center;
+    background-color: #fff;
+    padding: 30px; /* Ajusta el padding para hacer el cuadro más grande */
+    border-radius: 15px; /* Ajusta el radio de borde para hacer el cuadro más redondeado */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tecnologia i {
+    font-size: 60px; /* Ajusta el tamaño de la fuente para hacer el icono más grande */
+    margin-bottom: 15px; /* Ajusta el margen inferior del icono */
+    color: blue;
+}
+
+.tecnologia p {
+    margin: 0;
+    font-size: 18px; /* Ajusta el tamaño de la fuente para el texto */
+}
+
+/*Estilo para la seccion hobbies*/
+
+#hobbies {
+    width: 100vw;
+    height: 60vh;
+    margin-top: 4%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra los elementos horizontalmente */
+}
+
+#hobbies h2 {
+    text-align: center;
+}
+
+/*Estilo para los iconos de hobbies*/
+
+.intereses {
+    display: flex;
+    justify-content: space-around;
+    gap: 35px;
+    margin-top: 4%;
+}
+
+.interes {
+    text-align: center;
+    background-color: #fff;
+    padding: 30px; /* Ajusta el padding para hacer el cuadro más grande */
+    border-radius: 15px; /* Ajusta el radio de borde para hacer el cuadro más redondeado */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.interes i {
+    font-size: 60px; /* Ajusta el tamaño de la fuente para hacer el icono más grande */
+    margin-bottom: 15px; /* Ajusta el margen inferior del icono */
+    color: blue;
+}
+
+.interes p {
+    margin: 0;
+    font-size: 18px; /* Ajusta el tamaño de la fuente para el texto */
+}
+
+/* Estilo para #formacion */
+#formacion {
+    width: 100vw;
+    height: 80vh;
+    margin-top: 4%;
+    background-color: #ebeefc;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra los elementos horizontalmente */
+}
+
+#formacion h2 {
+    margin-bottom: 25px; /* Ajustado el margen inferior del h2 */
+    font-size: 35px;
+    text-align: center;
+}
+
+.formacion-item {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Añadido para centrar horizontalmente */
+    margin-top: 1%;
+    text-align: center;
+}
+
+.formacion-item img {
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.formacion-item .descripcion {
+    max-width: 200px;
+    text-align: left; /* Alinea el texto a la izquierda */
+}
+
+/* Nuevas líneas añadidas para que las imágenes estén en una fila */
+.formacion-items {
+    display: flex;
+    justify-content: center;
+}
+
+.formacion-item img {
+    margin-right: 20px;
+}
+
+/*Estilo para la seccion de proyectos*/
+
+#proyectos {
+    width: 100vw;
+    height: 90vh;
+    margin-top: 4%;
+    margin-left: none;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/*Fijarme que hacer con el margin top y mover el margin bottom arriba*/
+
+#proyectos {
+    margin-top: auto;
+    margin-bottom: 20%;
+}
+
+.experience {
+    display: flex;
+    flex-direction: column;
+    padding-top: 3rem;
+    background-color: #F5F5F5;
+}
+
+.experience__section__title {
+    font-weight: 700;
+    font-size: 2rem;
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+.experiencie__box{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 10rem 3rem;
+    gap: 1rem;
+}
+
+.experiencie__box:nth-child(odd){
+    flex-direction: row-reverse;
+}
+
+.experience__title{
+    font-size: 1.375rem;
+    font-weight:700;
+    line-height: 1.5rem;
+    padding-top: 1rem;
+}
+
+.experience__text{
+    font-size:1rem;
+    font-weight: 500;
+    padding-top: 0.5rem;
+}
+
+.experiencia__botao--repo{
+    margin: 0.5rem;
+    border:1px solid;
+    border-color: #2A7AE4;
+    color: #2A7AE4;
+    font-size: 1rem;
+    width: 116px;
+    height: 51px;
+    cursor: pointer;  
+}
+
+.experience__botao--demo{
+    margin: 0.5rem;
+    border:1px solid;
+    border-color: #2A7AE4;
+    background-color: #2A7AE4;
+    color: #fff;
+    font-size: 1rem;
+    width: 116px;
+    height: 51px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px){
+    .experiencie__box{
+        display:flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 0 5rem 1rem;
+        gap: 2rem;  
+    }
+    .experience__img{
+        width: 60%;
+    }
+}
+
+@media (max-width: 414px){
+    .experience {
+        display: flex;
+        flex-direction: column;
+        background-color: #F5F5F5;
+    }
+    .experiencie__box{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .experiencie__box img{
+        width: 300px;
+    }
+    .experience__img{
+        width: 100%;
+    }
+    .experience__description{
+        display: flex;
+        flex-wrap: nowrap;
+    }
+}
+
+/*Estilo para la seccion de contacto*/
+
+#contacto {
+    width: 100vw;
+    height: 80vh;
+    margin-top: 4%;
+    background-color: #ebeefc;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contacto h2,
+#contacto p {
+    margin-left: 45%;
+    margin-right: auto;
+}
+
+.contacto-contenedor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 800px; /* Puedes ajustar el ancho máximo según tus necesidades */
+    margin-right: 20%;
+}
+
+.contact-me {
+    height: 100%;
+    width: 40%;
+}
+
+.formulario {
+    flex: 1;
+    max-width: 400px;
+    margin-left: 40px; /* Espacio entre la imagen y el formulario */
+    margin-right: 50px;
+    margin-top: 10px; /* Ajusta el margen superior del formulario */
+    padding-left: 100px;
+}
+
+#contacto label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+#contacto input,
+#contacto textarea {
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    width: 100%;
+    resize: none;
+}
+
+#contacto button {
+    background-color: #007BFF; /* Azul */
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#contacto button:hover {
+    background-color: #0056b3; /* Cambio de color al pasar el ratón */
+}
+
+/*Estilo para el pie de la pagina*/
+
+footer {
+    text-align: center;
+    margin: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+/*Diseño responsivo para la pagina*/
+
+    /* Móvil (425px en adelante) */
+@media (max-width: 425px) {
+
+    .menu-navegacion {
+    /* Elimina float y ajusta el margen derecho */
+    margin: auto;
+    padding-top: 25px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    margin-left: 50%;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    margin: 0 10px;
+}
+
+nav a:hover {
+    color: #ffcc00;
+}
+
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .texto {
+        padding-left: 95%;
+        word-wrap: break-word;
+    }
+
+    .perfil-dueño {
+        margin-left: 80%;
+    }
+
+    .botones, .fcc-btn {
+        margin-right: 0%;
+        flex-direction: row;
+    }
+
+    #sobre-mi {
+        margin-top: 10%;
+        width: 100vh;
+        text-align: center;
+        padding-left: 5%;
+        padding-right: 5%;
+        margin-left: 50%;
+    }
+
+    #sobre-mi img.firma-digital {
+        margin-left: 25%;
+    }
+
+    .parrafo {
+        margin-left: 30%;
+        text-align: center;
+    }
+
+    #sobre-mi h2 {
+        margin-left: 25%;
+    }
+
+    .tecnologia i,
+    .interes i {
+        font-size: 30px;
+    }
+}
