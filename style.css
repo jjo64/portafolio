@@ -117,8 +117,8 @@ header {
 /*Estilo seccion sobre mi*/
 
 #sobre-mi {
-    width: 100vw;
-    height: 60vh;
+    min-width: 100%;
+    min-height: 60%;
     margin-top: 4%;
     margin-left: none;
     background-color: #ebeefc;
@@ -148,8 +148,8 @@ header {
 /*Estilo skills*/
 
 #skills {
-    width: 100vw;
-    height: 60vh;
+    min-width: 100%;
+    min-height: 60%;
     margin-top: 4%;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -193,8 +193,8 @@ header {
 /*Estilo para la seccion hobbies*/
 
 #hobbies {
-    width: 100vw;
-    height: 60vh;
+    min-width: 100%;
+    min-height: 60%;
     margin-top: 4%;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -237,8 +237,8 @@ header {
 
 /* Estilo para #formacion */
 #formacion {
-    width: 100vw;
-    height: 80vh;
+    min-width: 100%;
+    min-height: 80%;
     margin-top: 4%;
     background-color: #ebeefc;
     padding-top: 20px;
