@@ -140,7 +140,7 @@ header {
 
 .firma-digital {
     height: 100px;
-    width: 100px;
+    width: 200px;
     margin-left: 10%;
     margin-top: 1%;
 }
@@ -254,35 +254,78 @@ header {
     text-align: center;
 }
 
-.formacion-item {
-    display: flex;
-    align-items: center;
-    justify-content: center; /* Añadido para centrar horizontalmente */
-    margin-top: 1%;
+/* FORMACION ACADEMICA */
+.container-formacion {
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+.container-formacion {
+    background-color: #EAF2FD;
+    padding: 15px 9%;
+    padding-bottom: 100px;
+}
+
+.container-formacion .heading {
     text-align: center;
+    padding-bottom: 15px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    color: #464646;
+    margin-top: 2rem;
 }
 
-.formacion-item img {
-    height: 150px;
-    width: 150px;
+.container-formacion .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-gap: 80px 15px;
+    padding-top: 70px;
+}
+
+.container-formacion .box-container .box {
+    background-color: #ffffff;
+    text-align: center;
+    padding: 50px 20px;
+    position: relative; /* Agregado */
+}
+
+.utn{
+    height: 200px;
+    width: 200px;
     object-fit: cover;
-    margin-right: 20px;
 }
 
-.formacion-item .descripcion {
-    max-width: 200px;
-    text-align: left; /* Alinea el texto a la izquierda */
+.alura {
+    height: 200px;
+    width: 90%;
+    object-fit: cover;
 }
 
-/* Nuevas líneas añadidas para que las imágenes estén en una fila */
-.formacion-items {
-    display: flex;
-    justify-content: center;
+.utn, .alura {
+    flex-direction: row;
 }
 
-.formacion-item img {
-    margin-right: 20px;
+.container-formacion .box-container h3 {
+    /* Eliminado, ya que estaba duplicado */
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    color: #464646;
+    margin-top: 3.5rem; /* Movido aquí */
 }
+
+.container-formacion .box-container p {
+    font-size: 1rem;
+    color: #464646;
+    font-weight: 500;
+    margin-top: 5.5rem; /* Movido aquí */
+}
+
 
 /*Estilo para la seccion de proyectos*/
 
