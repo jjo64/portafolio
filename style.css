@@ -518,31 +518,29 @@ footer {
 
 /*Diseño responsivo para la pagina*/
 
-    /* Móvil (425px en adelante) */
-@media (max-width: 425px) {
-
+/* Móvil (430px en adelante) */
+@media (max-width: 430px) {
     .menu-navegacion {
-    /* Elimina float y ajusta el margen derecho */
-    margin: auto;
-    padding-top: 25px;
-}
+        margin: auto;
+        padding-top: 25px;
+    }
 
-nav ul {
-    list-style-type: none;
-    display: flex;
-    margin-left: 50%;
-}
+    nav ul {
+        list-style-type: none;
+        display: flex;
+        margin-left: 50%;
+    }
 
-nav a {
-    text-decoration: none;
-    color: #000;
-    font-weight: bold;
-    margin: 0 10px;
-}
+    nav a {
+        text-decoration: none;
+        color: #000;
+        font-weight: bold;
+        margin: 0 10px;
+    }
 
-nav a:hover {
-    color: #ffcc00;
-}
+    nav a:hover {
+        color: #ffcc00;
+    }
 
     header {
         flex-direction: column;
@@ -565,28 +563,91 @@ nav a:hover {
 
     #sobre-mi {
         margin-top: 10%;
-        width: 100vh;
+        min-width: 100%;
         text-align: center;
         padding-left: 5%;
         padding-right: 5%;
-        margin-left: 50%;
+        margin-left: 100%;
     }
 
     #sobre-mi img.firma-digital {
-        margin-left: 25%;
+        margin-left: 5%;
     }
 
     .parrafo {
-        margin-left: 30%;
+        margin-left: 5%;
         text-align: center;
     }
 
     #sobre-mi h2 {
-        margin-left: 25%;
+        margin-left: 5%;
+    }
+
+    #skills,
+    #hobbies,
+    #formacion {
+        margin-left: 100%;
+    }
+
+    .tecnologia,
+    .interes {
+        text-align: center;
+        background-color: #fff;
+        padding: 25px;
+        border-radius: 15px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
 
     .tecnologia i,
     .interes i {
         font-size: 30px;
+        margin-bottom: 15px;
+        color: blue;
     }
+
+    .tecnologia p,
+    .interes p {
+        margin: 0;
+        font-size: 18px;
+    }
+
+    /* Estilo para #formacion */
+    #formacion {
+        min-width: 100%;
+        min-height: 80%;
+        margin-top: 4%;
+        background-color: #ebeefc;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    #formacion h2 {
+        margin-bottom: 25px;
+        font-size: 35px;
+        text-align: center;
+    }
+
+    /* FORMACION ACADEMICA */
+    .container-formacion {
+        box-sizing: border-box;
+        outline: none;
+        border: none;
+        text-decoration: none;
+    }
+
+#proyectos {
+        margin-top: 10%;
+        min-width: 100%;
+        margin-left: 100%;
+        padding-left: 9%;
+}
+
+#contacto {
+    margin-left: 100%;
+}
+
+footer {
+    margin-left: 100%;
+}
+
 }
