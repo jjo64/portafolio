@@ -121,7 +121,7 @@ header {
     min-height: 60%;
     margin-top: 4%;
     margin-left: none;
-    background-color: #ebeefc;
+    background-color: #EAF2FD;
     padding-top: 20px;
     padding-bottom: 20px;
 }
@@ -240,7 +240,7 @@ header {
     min-width: 100%;
     min-height: 80%;
     margin-top: 4%;
-    background-color: #ebeefc;
+    background-color: #EAF2FD;
     padding-top: 20px;
     padding-bottom: 20px;
     display: flex;
@@ -290,7 +290,7 @@ header {
     background-color: #ffffff;
     text-align: center;
     padding: 50px 20px;
-    position: relative; /* Agregado */
+    position: relative; 
 }
 
 .utn{
@@ -310,20 +310,19 @@ header {
 }
 
 .container-formacion .box-container h3 {
-    /* Eliminado, ya que estaba duplicado */
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
     font-size: 22px;
     color: #464646;
-    margin-top: 3.5rem; /* Movido aquí */
+    margin-top: 3.5rem;
 }
 
 .container-formacion .box-container p {
     font-size: 1rem;
     color: #464646;
     font-weight: 500;
-    margin-top: 5.5rem; /* Movido aquí */
+    margin-top: 5.5rem;
 }
 
 
@@ -441,7 +440,7 @@ header {
     min-width: 100%;
     min-height: 60%;
     margin-top: 4%;
-    background-color: #ebeefc;
+    background-color: #EAF2FD;
     padding-top: 20px;
     padding-bottom: 20px;
     display: flex;
@@ -616,7 +615,7 @@ footer {
         min-width: 100%;
         min-height: 80%;
         margin-top: 4%;
-        background-color: #ebeefc;
+        background-color: #EAF2FD;
         padding-top: 20px;
         padding-bottom: 20px;
     }
